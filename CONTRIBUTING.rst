@@ -1,27 +1,31 @@
 .. todo:: THIS IS SUPPOSED TO BE AN EXAMPLE. MODIFY IT ACCORDING TO YOUR NEEDS!
 
-   The document assumes you are using a source repository service that promotes a
-   contribution model similar to `GitHub's fork and pull request workflow`_.
-   While this is true for the majority of services (like GitHub, GitLab,
-   BitBucket), it might not be the case for private repositories (e.g., when
-   using Gerrit).
+Contributing to Network Visualizer
+==================================
+Thank you for considering contributing to Network Visualizer! Follow these guidelines to contribute effectively.
 
-   Also notice that the code examples might refer to GitHub URLs or the text
-   might use GitHub specific terminology (e.g., *Pull Request* instead of *Merge
-   Request*).
+The document assumes you are using a source repository service that promotes a
+contribution model similar to `GitHub's fork and pull request workflow`_.
+While this is true for the majority of services (like GitHub, GitLab,
+BitBucket), it might not be the case for private repositories (e.g., when
+using Gerrit).
 
-   Please make sure to check the document having these assumptions in mind
-   and update things accordingly.
+Also notice that the code examples might refer to GitHub URLs or the text
+might use GitHub specific terminology (e.g., *Pull Request* instead of *Merge
+Request*).
+
+Please make sure to check the document having these assumptions in mind
+and update things accordingly.
 
 .. todo:: Provide the correct links/replacements at the bottom of the document.
 
+
+* [Project Homepage](https://github.com/yao-creative/network-visualizer)
+* [Bug Tracker](https://github.com/yao-creative/network-visualizer/issues)
+
 .. todo:: You might want to have a look on `PyScaffold's contributor's guide`_,
 
-   especially if your project is open source. The text should be very similar to
-   this template, but there are a few extra contents that you might decide to
-   also include, like mentioning labels of your issue tracker or automated
-   releases.
-
+You might want to have a look at the [PyScaffold contributor’s guide](https://pyscaffold.org/en/latest/contributing.html) for more ideas.
 
 ============
 Contributing
@@ -74,23 +78,26 @@ that any documentation update is done in the same way was a code contribution.
 
 .. todo:: Don't forget to mention which markup language you are using.
 
-    e.g.,  reStructuredText_ or CommonMark_ with MyST_ extensions.
+The documentation is written in reStructuredText_ and `MyST`_ (Markdown-like
+syntax) and compiled with Sphinx_.
 
 .. todo:: If your project is hosted on GitHub, you can also mention the following tip:
 
-   .. tip::
-      Please notice that the `GitHub web interface`_ provides a quick way of
-      propose changes in ``network-visualizer``'s files. While this mechanism can
-      be tricky for normal code contributions, it works perfectly fine for
-      contributing to the docs, and can be quite handy.
+You can submit pull requests (PRs) from your GitHub fork.
 
-      If you are interested in trying this method out, please navigate to
-      the ``docs`` folder in the source repository_, find which file you
-      would like to propose changes and click in the little pencil icon at the
-      top, to open `GitHub's code editor`_. Once you finish editing the file,
-      please write a message in the form at the bottom of the page describing
-      which changes have you made and what are the motivations behind them and
-      submit your proposal.
+.. tip::
+   Please notice that the `GitHub web interface`_ provides a quick way of
+   propose changes in ``network-visualizer``'s files. While this mechanism can
+   be tricky for normal code contributions, it works perfectly fine for
+   contributing to the docs, and can be quite handy.
+
+   If you are interested in trying this method out, please navigate to
+   the ``docs`` folder in the source repository_, find which file you
+   would like to propose changes and click in the little pencil icon at the
+   top, to open `GitHub's code editor`_. Once you finish editing the file,
+   please write a message in the form at the bottom of the page describing
+   which changes have you made and what are the motivations behind them and
+   submit your proposal.
 
 When working on documentation changes in your local machine, you can
 compile them using |tox|_::
@@ -108,9 +115,7 @@ Code Contributions
 
 .. todo:: Please include a reference or explanation about the internals of the project.
 
-   An architecture description, design principles or at least a summary of the
-   main concepts will make it easy for potential contributors to get started
-   quickly.
+For detailed information about the internals of the project, refer to the [Developer Documentation](https://github.com/yao-creative/network-visualizer/developer-docs).
 
 Submit an issue
 ---------------
@@ -218,11 +223,11 @@ Submit your contribution
 #. Go to the web page of your fork and click |contribute button|
    to send your changes for review.
 
-   .. todo:: if you are using GitHub, you can uncomment the following paragraph
+.. todo:: if you are using GitHub, you can uncomment the following paragraph
 
-      Find more detailed information in `creating a PR`_. You might also want to open
-      the PR as a draft first and mark it as ready for review after the feedbacks
-      from the continuous integration (CI) system or any required fixes.
+Find more detailed information in `creating a PR`_. You might also want to open
+the PR as a draft first and mark it as ready for review after the feedbacks
+from the continuous integration (CI) system or any required fixes.
 
 
 Troubleshooting
@@ -310,13 +315,14 @@ on PyPI_, the following steps can be used to release a new version for
 
 .. <-- start -->
 .. todo:: Please review and change the following definitions:
-
-.. |the repository service| replace:: GitHub
-.. |contribute button| replace:: "Create pull request"
-
-.. _repository: https://github.com/<USERNAME>/network-visualizer
-.. _issue tracker: https://github.com/<USERNAME>/network-visualizer/issues
 .. <-- end -->
+
+|the repository service| replace:: GitHub
+|contribute button| replace:: "Create pull request"
+
+_repository: https://github.com/yao-creative/network-visualizer
+_issue tracker: https://github.com/yao-creative/network-visualizer/issues
+
 
 
 .. |virtualenv| replace:: ``virtualenv``
@@ -324,30 +330,30 @@ on PyPI_, the following steps can be used to release a new version for
 .. |tox| replace:: ``tox``
 
 
-.. _black: https://pypi.org/project/black/
-.. _CommonMark: https://commonmark.org/
-.. _contribution-guide.org: https://www.contribution-guide.org/
-.. _creating a PR: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
-.. _descriptive commit message: https://chris.beams.io/posts/git-commit
-.. _docstrings: https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html
-.. _first-contributions tutorial: https://github.com/firstcontributions/first-contributions
-.. _flake8: https://flake8.pycqa.org/en/stable/
-.. _git: https://git-scm.com
-.. _GitHub's fork and pull request workflow: https://guides.github.com/activities/forking/
-.. _guide created by FreeCodeCamp: https://github.com/FreeCodeCamp/how-to-contribute-to-open-source
-.. _Miniconda: https://docs.conda.io/en/latest/miniconda.html
-.. _MyST: https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html
-.. _other kinds of contributions: https://opensource.guide/how-to-contribute
-.. _pre-commit: https://pre-commit.com/
-.. _PyPI: https://pypi.org/
-.. _PyScaffold's contributor's guide: https://pyscaffold.org/en/stable/contributing.html
-.. _Pytest can drop you: https://docs.pytest.org/en/stable/how-to/failures.html#using-python-library-pdb-with-pytest
-.. _Python Software Foundation's Code of Conduct: https://www.python.org/psf/conduct/
-.. _reStructuredText: https://www.sphinx-doc.org/en/master/usage/restructuredtext/
-.. _Sphinx: https://www.sphinx-doc.org/en/master/
-.. _tox: https://tox.wiki/en/stable/
-.. _virtual environment: https://realpython.com/python-virtual-environments-a-primer/
-.. _virtualenv: https://virtualenv.pypa.io/en/stable/
+_black: https://pypi.org/project/black/
+_CommonMark: https://commonmark.org/
+_contribution-guide.org: https://www.contribution-guide.org/
+_creating a PR: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
+_descriptive commit message: https://chris.beams.io/posts/git-commit
+_docstrings: https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html
+_first-contributions tutorial: https://github.com/firstcontributions/first-contributions
+_flake8: https://flake8.pycqa.org/en/stable/
+_git: https://git-scm.com
+_GitHub's fork and pull request workflow: https://guides.github.com/activities/forking/
+_guide created by FreeCodeCamp: https://github.com/FreeCodeCamp/how-to-contribute-to-open-source
+_Miniconda: https://docs.conda.io/en/latest/miniconda.html
+_MyST: https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html
+_other kinds of contributions: https://opensource.guide/how-to-contribute
+_pre-commit: https://pre-commit.com/
+_PyPI: https://pypi.org/
+_PyScaffold's contributor's guide: https://pyscaffold.org/en/stable/contributing.html
+_Pytest can drop you: https://docs.pytest.org/en/stable/how-to/failures.html#using-python-library-pdb-with-pytest
+_Python Software Foundation's Code of Conduct: https://www.python.org/psf/conduct/
+_reStructuredText: https://www.sphinx-doc.org/en/master/usage/restructuredtext/
+_Sphinx: https://www.sphinx-doc.org/en/master/
+_tox: https://tox.wiki/en/stable/
+_virtual environment: https://realpython.com/python-virtual-environments-a-primer/
+_virtualenv: https://virtualenv.pypa.io/en/stable/
 
-.. _GitHub web interface: https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files
-.. _GitHub's code editor: https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files
+_GitHub web interface: https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files
+_GitHub's code editor: https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files
